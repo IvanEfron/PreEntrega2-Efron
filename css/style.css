@@ -1,0 +1,137 @@
+
+/* body */
+* {
+    Margin:0;
+    padding:0;
+ }
+
+body {
+    background-color: #f5be0adc;
+    font-family: montserrat;
+}
+
+/* Class */
+.font18px{
+    font-size: 18px;
+}
+
+.separador-parrafos{
+    margin:20px;
+}
+
+.centrar-img-iframe{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+    
+.bg-gray{
+   background-color: rgba(131, 134, 134, 0.89); 
+   padding: 10px 20px 10px 20px;
+   margin: 30px 10px 20px 10px;
+   border-radius: 20px;
+}
+
+.bg-yellow-opaccity{
+    background-color: rgba(236, 234, 74, 0.39); 
+    padding: 10px 20px 40px 20px;
+    margin: 30px 10px 20px 10px;
+    opacity:0,5;
+    border-radius: 20px;
+ }
+
+
+.bg-black{
+    background-color: black;
+    color: #fac003;
+    margin: 10px 10px 30px 10px;
+    border-radius: 20px;
+    padding: 10px 0px 5px px;
+}
+/* Class */
+
+/*Subtitulos*/
+h2 {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+/*Subtitulos*/
+
+/*Titulos*/
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+}
+/*Titulos*/
+
+/*Header*/
+header {
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+}
+
+/*Barra de busqueda*/
+nav ul li a{
+     text-decoration: none;
+     color: rgb(241, 217, 5);
+     font-weight: bold;
+     font-size: 19px;
+     margin: 20px; 
+     border-radius: 10px;
+}
+
+ul{
+    text-align: center;
+    margin: 20px;
+}
+
+li{
+    display: inline-block
+}
+
+li:hover {
+    background-color: #9c78037e;
+    border-radius: 10px ;
+    
+}  
+/*Barra de busqueda cierra */
+
+/*Footer*/
+h4 {
+    text-align: center;
+}
+
+footer a i {
+    color: rgb(245, 221, 8);
+    font-size: 40px 
+}
+
+footer a i:hover{
+    color: #9c7803;
+}
+
+footer img {
+    display: block;
+    margin: auto;
+}
+
+section article img {
+    margin: 0px 15px 45px 20px;
+}
+/*Footer Cierra*/
+
+
+/*BIOGRAFIA*/
+.biografia-bg-color{
+    background-color: rgba(179, 179, 179, 0.856);
+    margin: 20px 15px 25px 15px;
+    padding: 15px 17px 15px 17px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+/*BIOGRAFIA*/
+
+
+
