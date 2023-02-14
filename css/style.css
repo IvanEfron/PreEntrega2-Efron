@@ -6,7 +6,7 @@
  }
 
 body {
-    background-color: #f5be0adc;
+    background-color: #f5be0adc; 
     font-family: montserrat;
 }
 
@@ -25,9 +25,8 @@ body {
     justify-content: center;
 }
 
-
 .bg-gray{
-   background-color: rgba(131, 134, 134, 0.89); 
+   background-color: rgba(131, 134, 134, 0.5); 
    padding: 10px 20px 10px 20px;
    margin: 30px 10px 20px 10px;
    border-radius: 20px;
@@ -38,15 +37,17 @@ body {
     padding: 10px 20px 40px 20px;
     margin: 30px 10px 20px 10px;
     opacity:0,5;
-    border-radius: 20px;
- }
+}
+
 
 
 .bg-black{
     background-color: rgb(0, 0, 0);
-    margin: 0px 10px 30px 10px;
-    border-radius: 20px;
-    padding: 10px 0px 5px;
+}
+footer.bg-black{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding: 0.60%;
 }
 /* Class */
 
@@ -68,40 +69,70 @@ h1 {
 
 /*Header*/
 header {
-    padding: 20px;
     position: sticky;
     top: 0px;
+    z-index: 100;
 }
 
 /*Barra de busqueda*/
 nav ul li a{
-     text-decoration: none;
-     color: rgb(241, 217, 5);
-     font-weight: bold;
-     font-size: 19px;
-     margin: 20px; 
-     border-radius: 10px;
+    text-decoration: none;
+    color:#fac003;
+    font-size: 22px;
+    
+}
+
+li:hover{
+    transform: scale(2);
 }
 
 ul{
-    text-align: center;
-    margin: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 }
-
-li{
-    display: inline-block
-}
-
-li:hover {
-    background-color: #9c78037e;
-    border-radius: 10px ;   
-}  
 /*Barra de busqueda cierra */
 
+/*Fotos*/
+section article img {
+    margin: 0px 15px 45px 20px;
+    position: static;
+}
+
 /*Footer*/
-footer{
+.contenedor-1{
+    grid-area: instagram-logo;
+    Justify-self: End;
+}
+
+.contenedor-2{
+    grid-area: logo-ruido-blanco;
+    Justify-Self: Center
+}
+
+.contenedor-3{
+    grid-area: copyright;
+    Justify-Self: Center
+}
+
+.contenedor-4{
+    grid-area: youtube-logo;
+    justify-self: start;
+}
+
+.super-contenedor{
+    width: 100%;
+    margin: 0 auto;
+    height: 5%;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+                        'logo-ruido-blanco logo-ruido-blanco'
+                        'copyright copyright'
+                        'youtube-logo instagram-logo'; 
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
 }
 
 h4 {
@@ -122,9 +153,6 @@ footer.bg-black{
     margin-top: 7px;
 }
 
-section article img {
-    margin: 0px 15px 45px 20px;
-}
 /*Footer Cierra*/
 
 
