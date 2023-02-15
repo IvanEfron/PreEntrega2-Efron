@@ -39,8 +39,6 @@ body {
     opacity:0,5;
 }
 
-
-
 .bg-black{
     background-color: rgb(0, 0, 0);
 }
@@ -138,6 +136,7 @@ section article img {
 h4 {
     text-align: center;
     color: #fac003;
+    font-size: 110%;
 }
 
 footer a i {
