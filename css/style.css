@@ -10,13 +10,16 @@ body {
     font-family: montserrat;
 }
 
-/* Class */
-.font18px{
-    font-size: 18px;
+/*Bienvenidos!*/
+span{
+    color: #836401;
 }
 
-.separador-parrafos{
-    margin:20px;
+/*Centrar*/
+div img.centrar-img-iframe{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .centrar-img-iframe{
@@ -25,11 +28,19 @@ body {
     justify-content: center;
 }
 
-.bg-gray{
+/*background-colors*/
+.bg-gray-1{
    background-color: rgba(131, 134, 134, 0.5); 
    padding: 10px 20px 10px 20px;
    margin: 30px 10px 20px 10px;
    border-radius: 20px;
+}
+
+.bg-gray-2{
+    background-color: rgba(131, 134, 134, 0.644); 
+    padding: 10px 20px 10px 20px;
+    margin: 30px 10px 20px 10px;
+    border-radius: 20px;
 }
 
 .bg-yellow-opaccity{
@@ -42,34 +53,43 @@ body {
 .bg-black{
     background-color: rgb(0, 0, 0);
 }
-footer.bg-black{
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    padding: 0.60%;
-}
-/* Class */
 
-/*Subtitulos*/
-h2 {
-    text-align: center;
-    margin: 20px 0px 20px 0px;
-}
-/*Subtitulos*/
-
-/*Titulos*/
+/*Subtitulos y Titulos*/
 h1 {
     text-align: center;
     font-weight: bold;
     font-size: 40px;
     color: #fac003;
 }
-/*Titulos*/
+
+h2 {
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: center;
+    color: #fac003;
+    font-size: 110%;
+}
 
 /*Header*/
-header {
+header{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    grid-row-gap: 15px;
+    padding-top: 25px;
     position: sticky;
     top: 0px;
     z-index: 100;
+
+}
+
+header.bg-black{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /*Barra de busqueda*/
@@ -77,11 +97,6 @@ nav ul li a{
     text-decoration: none;
     color:#fac003;
     font-size: 22px;
-    
-}
-
-li:hover{
-    transform: scale(2);
 }
 
 ul{
@@ -91,7 +106,30 @@ ul{
     justify-content: center;
     gap: 50px;
 }
-/*Barra de busqueda cierra */
+
+li{
+    transition: all 0.7s;
+    border-radius: 10px;
+}
+
+li:hover{
+    transform: scale(1.2);
+    background-color: #c29503ce;
+    border-radius: 12px;
+    padding: 0% 1% 0% 1%;
+}
+
+/*Shows*/
+.card-ivan{
+    background-color: #ecbc1e;
+}
+
+.card-div-ivan{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 200px;}
+
 
 /*Fotos*/
 section article img {
@@ -103,6 +141,7 @@ section article img {
 .contenedor-1{
     grid-area: instagram-logo;
     Justify-self: End;
+    transition: all 2s;
 }
 
 .contenedor-2{
@@ -118,6 +157,7 @@ section article img {
 .contenedor-4{
     grid-area: youtube-logo;
     justify-self: start;
+    transition: all 2s;
 }
 
 .super-contenedor{
@@ -133,37 +173,31 @@ section article img {
     grid-template-rows: auto;
 }
 
-h4 {
-    text-align: center;
-    color: #fac003;
-    font-size: 110%;
-}
-
-footer a i {
-    color: rgb(245, 221, 8);
-    font-size: 40px 
-}
-
-footer a i:hover{
-    color: #9c7803;
-}
-
 footer.bg-black{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    padding: 0.60%;
     margin-top: 7px;
 }
 
-/*Footer Cierra*/
-
-
-/*BIOGRAFIA*/
-.biografia-bg-color{
-    background-color: rgba(179, 179, 179, 0.856);
-    margin: 20px 15px 25px 15px;
-    padding: 15px 17px 15px 17px;
-    font-size: 18px;
-    border-radius: 20px;
+/*iconos instagram-youtube*/
+i{
+    color: rgb(245, 221, 8);
+    font-size: 40px;
+    transition: all 0.6s;
 }
+
+i:hover{
+    color: #c29503;
+    transform: scale(1.2);
+}
+
+
 /*BIOGRAFIA*/
+
+/*Vista Celular Biografia*/
+
+
 
 
 
