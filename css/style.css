@@ -138,6 +138,9 @@ li:hover{
     justify-content: center;
     gap: 200px;}
 
+div iframe{
+    border-radius: 30px;
+}
 
 /*Fotos*/
 section article img {
