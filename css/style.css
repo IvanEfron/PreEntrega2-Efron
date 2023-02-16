@@ -115,10 +115,6 @@ ul{
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-    
-}
-
 li{
     transition: all 0.7s;
     border-radius: 10px;
