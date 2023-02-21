@@ -27,6 +27,7 @@ div img.centrar-img-iframe{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /*background-colors*/
@@ -57,10 +58,12 @@ div img.centrar-img-iframe{
 
 /*Subtitulos y Titulos*/
 h1 {
-    text-align: center;
+    text-align: start;
     font-weight: bold;
     font-size: 40px;
     color: #fac003;
+    padding-left: 2%;
+    padding-top: 1%;
 }
 
 h2 {
@@ -77,57 +80,40 @@ h4 {
 
 /*Header*/
 header{
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    grid-row-gap: 15px;
-    padding-top: 25px;
     position: sticky;
     top: 0px;
     z-index: 100;
-
+    padding-bottom: 4px;
 }
 
-header.bg-black{
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+@media screen and (max-width: 768px) {
+    
 }
 
 
 /*Barra de busqueda*/
-nav ul li a{
-    text-decoration: none;
-    color:#fac003;
-    font-size: 22px;
+.nav-link{
+    transition: 0.5s;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffc400;
+    margin: 2%;
 }
 
-ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 50px;
+.nav-link:hover{
+    background-color: #a88100;
+    border-radius: 12px;
+    color:#fcff47;
 }
 
+/*Shows*/
 .contenedor-imagen img{
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-li{
-    transition: all 0.7s;
-    border-radius: 10px;
-}
-
-li:hover{
-    transform: scale(1.2);
-    background-color: #c29503ce;
-    border-radius: 12px;
-    padding: 0% 1% 0% 1%;
-}
-
-/*Shows*/
 .card-ivan{
     background-color: #ecbc1e;
 }
@@ -136,7 +122,8 @@ li:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 200px;}
+    gap: 200px;
+}
 
 div iframe{
     border-radius: 30px;
@@ -203,16 +190,36 @@ i:hover{
     transform: scale(1.2);
 }
 
-.row-mio div:nth-child(1){
-    background-color: #ecba14;
-}
-.row-mio div:nth-child(2){
-    background-color: #ecba14;
-}
-.row{
-    background-color: #ecba14;
-}
-/*BIOGRAFIA*/
+/*Vista Mobile Index*/
+@media (max-width: 768px) {
 
-/*Vista Celular Header*/
+    iframe{
+       width: 100%;
+    }
+
+    header{
+        position: static;
+    }
+
+    .card-div-ivan{
+        gap: 50px;
+    }
+
+}
+
+.contenedor-discografia-1 {
+    grid-area: instagram-logo;
+    Justify-self: End;
+    transition: all 2s;
+}
+
+.contenedor-discografia-2{
+    grid-area: logo-ruido-blanco;
+    Justify-Self: Center
+}
+
+.contenedor-discografia-3{
+    grid-area: copyright;
+    Justify-Self: Center
+}
 
