@@ -224,7 +224,11 @@ i:hover{
     }
 }
 
-
+@media (max-width: 505px){
+    div.disco-1 img{
+        width: 100%;
+    }
+}
 
 h3{
     display: flex;
@@ -238,11 +242,27 @@ h3{
     justify-content: center;
 }
 
-@media (max-width: 505px){
-    div.disco-1 img{
-        width: 100%;
-    }
+.grids-integrantes{
+    display: grid;
+    grid-template-columns: repeat(2, 5fr);
+    justify-items: c;
+    gap: 50px;
+    background-color: #ebbb1d;
+    padding: 20px;
+    border-radius: 50px;
+    margin: 15px;
 }
+
+.img-disco-1{
+    justify-self: stretch;
+}
+
+.img-disco-2{
+    justify-self: center;
+}
+
+
+
 
 
 
