@@ -83,13 +83,9 @@ header{
     position: sticky;
     top: 0px;
     z-index: 100;
-    padding-bottom: 4px;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
 }
-
-@media screen and (max-width: 768px) {
-    
-}
-
 
 /*Barra de busqueda*/
 .nav-link{
@@ -108,7 +104,7 @@ header{
 }
 
 /*Shows*/
-.contenedor-imagen img{
+.contenedor-imagen {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -197,29 +193,51 @@ i:hover{
        width: 100%;
     }
 
-    header{
-        position: static;
-    }
-
     .card-div-ivan{
         gap: 50px;
     }
 
+    img{
+        justify-content: center;
+    }
 }
 
-.contenedor-discografia-1 {
-    grid-area: instagram-logo;
-    Justify-self: End;
-    transition: all 2s;
+@media (max-width: 1200px){
+     div.contenedor-imagen img{
+        width: 200%;
+        background-color: #c09300be;
+        border-radius: 20px;
+        padding-top: 40px;
+    }
+
+    div.contenedor-imagen{
+        background-color: #c09300be;
+        border-radius: 20px;
+        margin-bottom: 25px;
+    }
+
+    .bg-color-biografia-1{
+        background-color: #bb9002;
+        padding: 2%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bg-color-biografia-2{
+        background-color: #9b7701;
+        padding: 2%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
 }
 
-.contenedor-discografia-2{
-    grid-area: logo-ruido-blanco;
-    Justify-Self: Center
+@media (max-width: 425px){
+    div.contenedor-imagen img{
+        width: 103%;
+    }
 }
+    
 
-.contenedor-discografia-3{
-    grid-area: copyright;
-    Justify-Self: Center
-}
+
+
 
