@@ -104,11 +104,6 @@ header{
 }
 
 /*Shows*/
-.contenedor-imagen {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
 
 .card-ivan{
     background-color: #ecbc1e;
@@ -186,22 +181,14 @@ i:hover{
     transform: scale(1.2);
 }
 
-/*Vista Mobile Index*/
-@media (max-width: 768px) {
-
-    iframe{
-       width: 100%;
-    }
-
-    .card-div-ivan{
-        gap: 50px;
-    }
-
-    img{
-        justify-content: center;
-    }
+/*Biografia*/
+.contenedor-imagen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
+/*Responsive Biografia*/
 @media (max-width: 1200px){
      div.contenedor-imagen img{
         width: 200%;
@@ -236,7 +223,27 @@ i:hover{
         width: 103%;
     }
 }
-    
+
+
+
+h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.disco-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 505px){
+    div.disco-1 img{
+        width: 100%;
+    }
+}
+
 
 
 
