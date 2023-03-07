@@ -1,0 +1,20 @@
+
+.grids-integrantes{
+    display: grid;
+    grid-template-columns: repeat(2, 5fr); 
+    justify-items: c;
+    gap: calc($gap*5);
+    background-color: #ebbb1d;
+    padding: calc($padding /1);
+    border-radius: calc($border-radius*5);
+    margin: $margin-integrantes;
+    font-size: 23px;
+}
+
+.img-integrante-1{
+    justify-self: map-get($justify-self, stretch);
+}
+
+.img-integrante-2{
+    justify-self: map-get($justify-self, centrar);
+}

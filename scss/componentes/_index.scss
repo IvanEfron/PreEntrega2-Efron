@@ -1,0 +1,39 @@
+span{
+    color: $color-span;
+}
+
+/*Shows*/
+.card-ivan{
+   background-color: $bg-color-card;     
+}
+
+.card-div-ivan{
+    @extend %flex-center-row;
+    gap: calc($gap *20);  
+}
+
+div{
+    iframe{
+        border-radius: calc($border-radius *3);
+    }
+}
+
+/*Fotos*/
+section{
+    article{
+        img{
+            margin: 0px 15px 45px 20px;
+            position: static;
+        }
+    }
+}
+
+/*Vista Mobile Index*/
+
+@media screen and (max-width: 768px) {
+    .card-div-ivan{
+        gap: calc($gap*10);
+    }
+    
+
+}

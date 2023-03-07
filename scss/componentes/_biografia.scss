@@ -1,0 +1,46 @@
+.contenedor-imagen {
+    @extend %flex-center-row;
+}
+
+.mas-info-style{
+    text-decoration: none;
+    color:#8b6b02;
+}
+
+.mas-info-style:hover{
+    color: #6e5500;
+}
+
+/*Responsive Biografia*/
+@media screen and (max-width: 1200px) {
+    div.contenedor-imagen{
+        img{
+            width: calc($width*2);
+            @include div-contenedor-img(#c09300be, 20px);
+            padding-top: 40px;
+        }
+    }
+
+    div.contenedor-imagen{
+        @include div-contenedor-img(#c09300be, 20px);
+        margin-bottom: 25px;
+    }
+
+    .bg-color-biografia-1{
+        background-color: #bb9002;
+        @include bg-color-responsive(2%, 20px, 20px)
+    }
+
+    .bg-color-biografia-2{
+        background-color: #9b7701;
+        @include bg-color-responsive(2%, 20px, 20px)
+    }
+
+}
+
+
+@media (max-width: 425px){
+    div.contenedor-imagen img{
+        width: calc($width);
+    }
+}

@@ -1,0 +1,24 @@
+/*bg-colors para index*/
+@mixin bg-color-grays($bg-color, $marg, $pad, $bor-rad){
+    background-color: $bg-color;
+    margin: $marg;
+    padding: $pad;
+    border-radius: $bor-rad;
+}
+
+@mixin bg-color-yellow($bg-color, $pad, $marg){
+    background-color: $bg-color;
+    padding: $pad;
+    margin: $marg;
+}
+
+@mixin bg-color-responsive($padding, $border-radius, $margin-bot){
+    padding: $padding;
+    border-radius: $border-radius;
+    margin-bottom: $margin-bot;
+}
+
+@mixin div-contenedor-img($bg-color, $border-radius){
+    background-color: $bg-color;
+    border-radius: $border-radius;
+}

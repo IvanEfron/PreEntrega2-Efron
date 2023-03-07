@@ -1,0 +1,33 @@
+/*Centrar*/
+.centrar-img-iframe{
+    @extend %flex-center-row;
+    flex-wrap: wrap;
+}
+
+div{
+    img.centrar-img-iframe {
+        margin-top: calc($margin);
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}    
+
+/* Backgrounds-colors */
+.bg-gray-1{
+    @include bg-color-grays(rgba(131, 134, 134, 0.5), 30px 10px 20px 10px, 
+    10px 20px 10px 20px, 20px)
+}
+
+.bg-gray-2{
+    @include bg-color-grays(rgba(131, 134, 134, 0.644), 30px 10px 20px 10px, 
+    10px 20px 10px 20px, 20px)
+}
+
+.bg-yellow-opaccity{
+    @include bg-color-yellow(rgba(236, 234, 74, 0.39), 10px 20px 40px 20px, 
+    30px 10px 20px 10px)
+}
+
+.bg-black{
+    background-color: rgb(0, 0, 0);
+}

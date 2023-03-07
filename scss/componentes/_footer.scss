@@ -1,0 +1,54 @@
+/*Footer*/
+.contenedor-1{
+    grid-area: nth($logos-footer, 1);
+    justify-self: map-get($justify-self, end);
+    transition: $transicion;
+}
+
+.contenedor-2{
+    grid-area: nth($logos-footer, 2); 
+    justify-self: map-get($justify-self , centrar);
+}
+
+.contenedor-3{
+    grid-area: nth($logos-footer, 3);
+    justify-self: map-get($justify-self , centrar);  
+}
+
+.contenedor-4{
+    grid-area: nth($logos-footer, 4);
+    justify-self: map-get($justify-self , start);
+    transition: $transicion;
+}
+
+.super-contenedor{
+    width: ($width);
+    margin: 0 auto;
+    height: $height;
+    display: grid;
+    grid-template-areas:
+                        'logo-ruido-blanco logo-ruido-blanco'
+                        'copyright copyright'
+                        'youtube-logo instagram-logo';
+    grid-template-columns: 50%;
+    grid-template-rows: auto;
+}
+
+footer.bg-black{
+    border-top-right-radius: nth($bordes-radius, 1);
+    border-top-left-radius: nth($bordes-radius, 1);
+    padding: calc($padding*6 /20);
+    margin-top: calc($margin *7 /20);
+}
+
+/*iconos instagram-youtube*/
+i{  
+    color: rgb(245, 221, 8);
+    font-size: nth($font-size , 1 );
+    transition: calc($transicion/10 *3);
+}
+
+i:hover{
+    color: #c29503; 
+    transform: scale(1.2);
+}

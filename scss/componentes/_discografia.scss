@@ -1,0 +1,11 @@
+/*Disco*/
+.disco{
+    @extend %flex-center-row;
+}
+
+/*Vista mobile discografia*/
+@media (max-width: 505px){
+    div.disco img{
+        width: $width;
+    }
+}

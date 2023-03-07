@@ -1,0 +1,24 @@
+/*Header*/
+header{
+    position: sticky;
+    top: $top;
+    z-index: 100;
+    border-bottom-left-radius: nth($bordes-radius , 2);
+    border-bottom-right-radius: nth($bordes-radius , 2);
+}
+
+/*Barra de navegacion*/
+.nav-link{
+    transition: calc($transicion / 4);
+    border-radius: $border-radius;
+    font-weight: $font-bold;
+    font-size: nth($font-size , 2);
+    color: #ffc400;
+    margin:2%;
+}
+
+.nav-link:hover{
+    background-color: #a88100;
+    border-radius: calc($border-radius * 12 / 10);
+    color:#fcff47;
+}

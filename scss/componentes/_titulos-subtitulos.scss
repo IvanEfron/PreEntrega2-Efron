@@ -1,0 +1,25 @@
+/* Titulos y subtitulos*/
+h1{
+    text-align: nth($text-align , 2);
+    font-weight: $font-bold;
+    font-size: nth($font-size , 1);
+    @extend %fac003;
+    padding: 1% 0% 0% 1%;
+}
+
+h2{
+    font-weight: $font-bold;
+    margin: 20px 0px 20px 0px;
+    text-align: nth($text-align , 1);
+}
+
+h3{
+    @extend %flex-center-row;
+    font-weight: $font-bold;
+}
+
+h4{
+    @extend %fac003;
+    font-size: nth($font-size , 3);
+    text-align: nth($text-align , 1);
+}

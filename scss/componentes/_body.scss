@@ -1,0 +1,10 @@
+body{
+    font-family: map-get($body, font);
+    background-color: map-get($body, bgcolor);
+    overflow-x: hidden;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
