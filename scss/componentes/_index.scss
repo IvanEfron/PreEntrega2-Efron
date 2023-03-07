@@ -32,8 +32,11 @@ section{
 
 @media screen and (max-width: 768px) {
     .card-div-ivan{
-        gap: calc($gap*10);
+        gap: calc($gap*10); 
+        flex-wrap: wrap;
     }
+
     
+
 
 }

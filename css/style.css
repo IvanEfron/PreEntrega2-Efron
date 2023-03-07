@@ -40,6 +40,7 @@ section article img {
 @media screen and (max-width: 768px) {
   .card-div-ivan {
     gap: 100px;
+    flex-wrap: wrap;
   }
 }
 .mas-info-style {
@@ -92,6 +93,7 @@ section article img {
   border-radius: 50px;
   margin: 15px;
   font-size: 23px;
+  flex-wrap: wrap;
 }
 
 .img-integrante-1 {
@@ -102,6 +104,28 @@ section article img {
   justify-self: center;
 }
 
+/*Vista Responsive de Banda*/
+@media screen and (max-width: 1024px) {
+  .grids-integrantes {
+    grid-template-columns: none;
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 425px) {
+  div img.img-integrante-1 {
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  div img.img-integrante-2 {
+    width: 90%;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+  div.grids-integrantes p {
+    font-size: 20px;
+  }
+}
 /*Disco*/
 /*Vista mobile discografia*/
 @media (max-width: 505px) {

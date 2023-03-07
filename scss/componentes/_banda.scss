@@ -9,6 +9,7 @@
     border-radius: calc($border-radius*5);
     margin: $margin-integrantes;
     font-size: 23px;
+    flex-wrap: wrap;
 }
 
 .img-integrante-1{
@@ -17,4 +18,36 @@
 
 .img-integrante-2{
     justify-self: map-get($justify-self, centrar);
+}
+
+/*Vista Responsive de Banda*/
+@media screen and (max-width: 1024px) {
+    .grids-integrantes{
+        grid-template-columns: none;   
+        gap: calc($gap);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    div{
+        img.img-integrante-1{
+            width: calc($width*9 /10);
+            border-radius: calc($border-radius*2);
+            margin-top: 10px;
+        }
+    }
+
+    div{
+        img.img-integrante-2{
+            width: calc($width*9 /10);
+            border-radius: calc($border-radius*2);
+            margin-top: 10px;
+        }
+    }
+
+    div.grids-integrantes{
+        p{
+            font-size: nth($font-size , 4);
+        }
+    }
 }
