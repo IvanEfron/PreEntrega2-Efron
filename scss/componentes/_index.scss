@@ -1,3 +1,4 @@
+/*Color Span*/
 span{
     color: $color-span;
 }
@@ -29,14 +30,38 @@ section{
 }
 
 /*Vista Mobile Index*/
-
 @media screen and (max-width: 768px) {
     .card-div-ivan{
         gap: calc($gap*10); 
         flex-wrap: wrap;
     }
 
+    iframe{
+        height: 400px;
+        width: 800px;
+    }
     
-
-
 }
+
+@media screen and (max-width: 425px) {
+    article.centrar-img-iframe{
+        div{
+            img{
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    article.centrar-img-iframe{
+        div{
+            img{
+                height: 200px;
+            }
+        }
+    }
+}
+
+
+

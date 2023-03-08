@@ -1,8 +1,7 @@
-
+/*Integrantes*/
 .grids-integrantes{
     display: grid;
     grid-template-columns: repeat(2, 5fr); 
-    justify-items: c;
     gap: calc($gap*5);
     background-color: #ebbb1d;
     padding: calc($padding /1);
@@ -48,6 +47,14 @@
     div.grids-integrantes{
         p{
             font-size: nth($font-size , 4);
+        }
+    }
+}
+
+@media screen and (max-width: 375px){
+    div.grids-integrantes{
+        img{
+            padding-right: 10px;
         }
     }
 }

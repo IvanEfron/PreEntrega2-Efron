@@ -8,11 +8,7 @@ h4, h1 {
   color: #fac003;
 }
 
-/*Logos footer*/
-/*bordes-radius*/
-/*font-sizes*/
-/*Text-align para los titulos y subtitulos*/
-/*bg-colors para index*/
+/*Color Span*/
 span {
   color: #836401;
 }
@@ -42,7 +38,22 @@ section article img {
     gap: 100px;
     flex-wrap: wrap;
   }
+  iframe {
+    height: 400px;
+    width: 800px;
+  }
 }
+@media screen and (max-width: 425px) {
+  article.centrar-img-iframe div img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 375px) {
+  article.centrar-img-iframe div img {
+    height: 200px;
+  }
+}
+/*Link "Mas info..."*/
 .mas-info-style {
   text-decoration: none;
   color: #8b6b02;
@@ -83,10 +94,10 @@ section article img {
     width: 100%;
   }
 }
+/*Integrantes*/
 .grids-integrantes {
   display: grid;
   grid-template-columns: repeat(2, 5fr);
-  justify-items: c;
   gap: 50px;
   background-color: #ebbb1d;
   padding: 2%;
@@ -126,6 +137,11 @@ section article img {
     font-size: 20px;
   }
 }
+@media screen and (max-width: 375px) {
+  div.grids-integrantes img {
+    padding-right: 10px;
+  }
+}
 /*Disco*/
 /*Vista mobile discografia*/
 @media (max-width: 505px) {
@@ -133,15 +149,16 @@ section article img {
     width: 100%;
   }
 }
+/*Body*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: montserrat;
   background-color: rgba(245, 190, 10, 0.862745098);
   overflow-x: hidden;
-}
-
-* {
-  margin: 0;
-  padding: 0;
 }
 
 /*Header*/
