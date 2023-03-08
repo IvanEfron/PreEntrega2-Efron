@@ -1,115 +1,16 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/*Body*/
-body {
-  font-family: montserrat;
-  background-color: rgba(245, 190, 10, 0.862745098);
-  overflow-x: hidden;
-}
-
-/*Displays Flex*/
 h3, .centrar-img-iframe, .disco, .contenedor-imagen, .card-div-ivan {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-/*Colores de titulos*/
 h4, h1 {
   color: #fac003;
 }
 
-/* Titulos y subtitulos*/
-h1 {
-  text-align: start;
-  font-weight: bold;
-  font-size: 40px;
-  padding: 1% 0% 0% 1%;
-}
-
-h2 {
-  font-weight: bold;
-  margin: 20px 0px 20px 0px;
-  text-align: center;
-}
-
-h3 {
-  font-weight: bold;
-}
-
-h4 {
-  font-size: 110%;
-  text-align: center;
-}
-
-/*Color span*/
 /*Color Span*/
 span {
   color: #836401;
-}
-
-/* Backgrounds-colors */
-.bg-gray-1 {
-  background-color: rgba(131, 134, 134, 0.5);
-  margin: 30px 10px 20px 10px;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-}
-
-.bg-gray-2 {
-  background-color: rgba(131, 134, 134, 0.644);
-  margin: 30px 10px 20px 10px;
-  padding: 10px 20px 10px 20px;
-  border-radius: 20px;
-}
-
-.bg-yellow-opaccity {
-  background-color: rgba(236, 234, 74, 0.39);
-  padding: 10px 20px 40px 20px;
-  margin: 30px 10px 20px 10px;
-}
-
-.bg-black {
-  background-color: rgb(0, 0, 0);
-}
-
-/*Centrar*/
-.centrar-img-iframe {
-  flex-wrap: wrap;
-}
-
-div img.centrar-img-iframe {
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 10px;
-}
-
-/*Header*/
-header {
-  position: sticky;
-  top: 0px;
-  z-index: 100;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
-}
-
-/*Barra de navegacion*/
-.nav-link {
-  transition: 0.5s;
-  border-radius: 10px;
-  font-weight: bold;
-  font-size: 18px;
-  color: #ffc400;
-  margin: 2%;
-}
-
-.nav-link:hover {
-  background-color: #a88100;
-  border-radius: 12px;
-  color: #fcff47;
 }
 
 /*Shows*/
@@ -131,7 +32,7 @@ section article img {
   position: static;
 }
 
-/*Responsive Index*/
+/*Vista Mobile Index*/
 @media screen and (max-width: 768px) {
   .card-div-ivan {
     gap: 100px;
@@ -195,8 +96,28 @@ section article img {
     width: 100%;
   }
 }
+/*Integrantes*/
+.grids-integrantes {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  gap: 50px;
+  background-color: #ebbb1d;
+  padding: 2%;
+  border-radius: 50px;
+  margin: 15px;
+  font-size: 23px;
+  flex-wrap: wrap;
+}
 
-/*Responsive Banda*/
+.img-integrante-1 {
+  justify-self: stretch;
+}
+
+.img-integrante-2 {
+  justify-self: center;
+}
+
+/*Vista Responsive de Banda*/
 @media screen and (max-width: 1024px) {
   .grids-integrantes {
     grid-template-columns: none;
@@ -218,7 +139,6 @@ section article img {
     font-size: 20px;
   }
 }
-
 @media screen and (max-width: 375px) {
   div.grids-integrantes img {
     padding-right: 10px;
@@ -230,27 +150,6 @@ section article img {
   div.disco img {
     width: 100%;
   }
-}
-
-/*Banda*/
-.grids-integrantes {
-  display: grid;
-  grid-template-columns: repeat(2, 5fr);
-  gap: 50px;
-  background-color: #ebbb1d;
-  padding: 2%;
-  border-radius: 50px;
-  margin: 15px;
-  font-size: 23px;
-  flex-wrap: wrap;
-}
-
-.img-integrante-1 {
-  justify-self: stretch;
-}
-
-.img-integrante-2 {
-  justify-self: center;
 }
 /*Body*/
 * {
@@ -339,6 +238,65 @@ i {
 i:hover {
   color: #c29503;
   transform: scale(1.2);
+}
+
+/*Centrar*/
+.centrar-img-iframe {
+  flex-wrap: wrap;
+}
+
+div img.centrar-img-iframe {
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+/* Backgrounds-colors */
+.bg-gray-1 {
+  background-color: rgba(131, 134, 134, 0.5);
+  margin: 30px 10px 20px 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+.bg-gray-2 {
+  background-color: rgba(131, 134, 134, 0.644);
+  margin: 30px 10px 20px 10px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+}
+
+.bg-yellow-opaccity {
+  background-color: rgba(236, 234, 74, 0.39);
+  padding: 10px 20px 40px 20px;
+  margin: 30px 10px 20px 10px;
+}
+
+.bg-black {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Titulos y subtitulos*/
+h1 {
+  text-align: start;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 1% 0% 0% 1%;
+}
+
+h2 {
+  font-weight: bold;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 110%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
