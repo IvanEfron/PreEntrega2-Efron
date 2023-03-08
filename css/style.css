@@ -22,7 +22,6 @@ h4, h1 {
   color: #fac003;
 }
 
-<<<<<<< HEAD
 /* Titulos y subtitulos*/
 h1 {
   text-align: start;
@@ -47,9 +46,7 @@ h4 {
 }
 
 /*Color span*/
-=======
 /*Color Span*/
->>>>>>> rama-1
 span {
   color: #836401;
 }
@@ -198,8 +195,6 @@ section article img {
     width: 100%;
   }
 }
-<<<<<<< HEAD
-=======
 /*Integrantes*/
 .grids-integrantes {
   display: grid;
@@ -212,7 +207,6 @@ section article img {
   font-size: 23px;
   flex-wrap: wrap;
 }
->>>>>>> rama-1
 
 /*Responsive Banda*/
 @media screen and (max-width: 1024px) {
@@ -236,44 +230,18 @@ section article img {
     font-size: 20px;
   }
 }
-<<<<<<< HEAD
-
-=======
 @media screen and (max-width: 375px) {
   div.grids-integrantes img {
     padding-right: 10px;
   }
 }
 /*Disco*/
->>>>>>> rama-1
 /*Vista mobile discografia*/
 @media (max-width: 505px) {
   div.disco img {
     width: 100%;
   }
 }
-<<<<<<< HEAD
-
-/*Banda*/
-.grids-integrantes {
-  display: grid;
-  grid-template-columns: repeat(2, 5fr);
-  gap: 50px;
-  background-color: #ebbb1d;
-  padding: 2%;
-  border-radius: 50px;
-  margin: 15px;
-  font-size: 23px;
-  flex-wrap: wrap;
-}
-
-.img-integrante-1 {
-  justify-self: stretch;
-}
-
-.img-integrante-2 {
-  justify-self: center;
-=======
 /*Body*/
 * {
   margin: 0;
@@ -309,7 +277,6 @@ header {
   background-color: #a88100;
   border-radius: 12px;
   color: #fcff47;
->>>>>>> rama-1
 }
 
 /*Footer*/
