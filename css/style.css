@@ -22,6 +22,7 @@ h4, h1 {
   color: #fac003;
 }
 
+<<<<<<< HEAD
 /* Titulos y subtitulos*/
 h1 {
   text-align: start;
@@ -46,6 +47,9 @@ h4 {
 }
 
 /*Color span*/
+=======
+/*Color Span*/
+>>>>>>> rama-1
 span {
   color: #836401;
 }
@@ -136,7 +140,24 @@ section article img {
     gap: 100px;
     flex-wrap: wrap;
   }
+  iframe {
+    height: 400px;
+  }
 }
+@media screen and (max-width: 425px) {
+  article.centrar-img-iframe div img {
+    height: 250px;
+  }
+}
+@media screen and (max-width: 375px) {
+  article.centrar-img-iframe div img {
+    height: 200px;
+  }
+  iframe {
+    height: 300px;
+  }
+}
+/*Link "Mas info..."*/
 .mas-info-style {
   text-decoration: none;
   color: #8b6b02;
@@ -177,6 +198,21 @@ section article img {
     width: 100%;
   }
 }
+<<<<<<< HEAD
+=======
+/*Integrantes*/
+.grids-integrantes {
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  gap: 50px;
+  background-color: #ebbb1d;
+  padding: 2%;
+  border-radius: 50px;
+  margin: 15px;
+  font-size: 23px;
+  flex-wrap: wrap;
+}
+>>>>>>> rama-1
 
 /*Responsive Banda*/
 @media screen and (max-width: 1024px) {
@@ -200,13 +236,23 @@ section article img {
     font-size: 20px;
   }
 }
+<<<<<<< HEAD
 
+=======
+@media screen and (max-width: 375px) {
+  div.grids-integrantes img {
+    padding-right: 10px;
+  }
+}
+/*Disco*/
+>>>>>>> rama-1
 /*Vista mobile discografia*/
 @media (max-width: 505px) {
   div.disco img {
     width: 100%;
   }
 }
+<<<<<<< HEAD
 
 /*Banda*/
 .grids-integrantes {
@@ -227,6 +273,43 @@ section article img {
 
 .img-integrante-2 {
   justify-self: center;
+=======
+/*Body*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: montserrat;
+  background-color: rgba(245, 190, 10, 0.862745098);
+  overflow-x: hidden;
+}
+
+/*Header*/
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+/*Barra de navegacion*/
+.nav-link {
+  transition: 0.5s;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffc400;
+  margin: 2%;
+}
+
+.nav-link:hover {
+  background-color: #a88100;
+  border-radius: 12px;
+  color: #fcff47;
+>>>>>>> rama-1
 }
 
 /*Footer*/
