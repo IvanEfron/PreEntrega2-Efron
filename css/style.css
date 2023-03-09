@@ -58,11 +58,17 @@ section article img {
 /*Link "Mas info..."*/
 .mas-info-style {
   text-decoration: none;
-  color: #8b6b02;
+  color: #69540f;
+  font-weight: bold;
 }
 
 .mas-info-style:hover {
-  color: #6e5500;
+  color: #bd9513;
+}
+
+/*Font size parrafo*/
+div.font-size-biografia p {
+  font-size: 20px;
 }
 
 /*Responsive Biografia*/
@@ -83,6 +89,7 @@ section article img {
     padding: 2%;
     border-radius: 20px;
     margin-bottom: 20px;
+    padding: 4%;
   }
   .bg-color-biografia-2 {
     background-color: #9b7701;
@@ -94,6 +101,9 @@ section article img {
 @media (max-width: 425px) {
   div.contenedor-imagen img {
     width: 100%;
+  }
+  div.font-size-biografia p {
+    font-size: 18px;
   }
 }
 /*Integrantes*/
@@ -257,6 +267,7 @@ div img.centrar-img-iframe {
   margin: 30px 10px 20px 10px;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
+  font-size: 20px;
 }
 
 .bg-gray-2 {
@@ -264,6 +275,7 @@ div img.centrar-img-iframe {
   margin: 30px 10px 20px 10px;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
+  font-size: 20px;
 }
 
 .bg-yellow-opaccity {

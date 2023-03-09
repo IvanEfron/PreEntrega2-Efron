@@ -15,12 +15,14 @@ div{
 /* Backgrounds-colors */
 .bg-gray-1{
     @include bg-color-grays(rgba(131, 134, 134, 0.5), 30px 10px 20px 10px, 
-    10px 20px 10px 20px, 20px)
+    10px 20px 10px 20px, 20px);
+    font-size: nth($font-size ,4);
 }
 
 .bg-gray-2{
     @include bg-color-grays(rgba(131, 134, 134, 0.644), 30px 10px 20px 10px, 
-    10px 20px 10px 20px, 20px)
+    10px 20px 10px 20px, 20px);
+    font-size: nth($font-size ,4) 
 }
 
 .bg-yellow-opaccity{
