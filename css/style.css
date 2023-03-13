@@ -33,6 +33,7 @@ section article img {
 }
 
 /*Vista Mobile Index*/
+/*768px*/
 @media screen and (max-width: 768px) {
   .card-div-ivan {
     gap: 100px;
@@ -42,6 +43,7 @@ section article img {
     height: 400px;
   }
 }
+/*425px*/
 @media screen and (max-width: 425px) {
   article.centrar-img-iframe div img {
     height: 250px;
@@ -50,6 +52,7 @@ section article img {
     display: none;
   }
 }
+/*375px*/
 @media screen and (max-width: 375px) {
   article.centrar-img-iframe div img {
     height: 200px;

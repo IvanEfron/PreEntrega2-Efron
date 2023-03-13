@@ -30,6 +30,7 @@ section{
 }
 
 /*Vista Mobile Index*/
+/*768px*/
 @media screen and (max-width: 768px) {
     .card-div-ivan{
         gap: calc($gap*10); 
@@ -42,7 +43,7 @@ section{
     
 
 }
-
+/*425px*/
 @media screen and (max-width: 425px) {
     article.centrar-img-iframe{
         div{
@@ -56,7 +57,7 @@ section{
         display: none;
     }
 }
-
+/*375px*/
 @media screen and (max-width: 375px) {
     article.centrar-img-iframe{
         div{
