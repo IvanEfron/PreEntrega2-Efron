@@ -46,6 +46,9 @@ section article img {
   article.centrar-img-iframe div img {
     height: 250px;
   }
+  div#carouselExampleCaptions {
+    display: none;
+  }
 }
 @media screen and (max-width: 375px) {
   article.centrar-img-iframe div img {
