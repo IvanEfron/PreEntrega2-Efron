@@ -5,7 +5,9 @@
 
 /*Vista mobile discografia*/
 @media (max-width: 505px){
-    div.disco img{
-        width: $width;
+    div.disco{
+        img{
+            width: $width;
+        }
     }
-}
+    }

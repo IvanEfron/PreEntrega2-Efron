@@ -49,8 +49,10 @@ div.font-size-biografia{
 }
 
 @media (max-width: 425px){
-    div.contenedor-imagen img{
-        width: calc($width);
+    div.contenedor-imagen{
+        img{
+            width: $width;
+        }
     }
 
     div.font-size-biografia{

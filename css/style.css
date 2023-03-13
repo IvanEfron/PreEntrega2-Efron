@@ -1,4 +1,4 @@
-h3, .centrar-img-iframe, .disco, .contenedor-imagen, .card-div-ivan {
+.col-auto, label, h3, .centrar-img-iframe, .disco, .contenedor-imagen, .card-div-ivan {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -309,6 +309,30 @@ h3 {
 h4 {
   font-size: 110%;
   text-align: center;
+}
+
+label {
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+/*Boton enviar*/
+.btn-primary {
+  background-color: #745902;
+  color: #ecbc1e;
+  border-color: #836810;
+}
+
+.btn-primary:hover {
+  background-color: #745902;
+  color: #ffd755;
+  border-color: #9e7e14;
+}
+
+.btn-primary:active {
+  --bs-btn-active-bg:#70590f;
+  --bs-btn-active-color: #ffd755;
+  --bs-btn-active-border-color: #9e7e14;
 }
 
 /*# sourceMappingURL=style.css.map */

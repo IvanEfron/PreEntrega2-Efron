@@ -1,0 +1,28 @@
+label{
+    font-size: nth($font-size , 4);
+    @extend %flex-center-row;
+    margin-top: 8px
+}
+
+.col-auto{
+    @extend %flex-center-row;
+}
+
+/*Boton enviar*/
+.btn-primary{
+    background-color: $bg-color-enviar;
+    color: #ecbc1e;
+    border-color: #836810;
+}
+
+.btn-primary:hover{
+    background-color: $bg-color-enviar;
+    color: #ffd755;
+    border-color: #9e7e14;
+}
+
+.btn-primary:active{
+    --bs-btn-active-bg:#70590f;
+    --bs-btn-active-color: #ffd755;
+    --bs-btn-active-border-color: #9e7e14;
+}
